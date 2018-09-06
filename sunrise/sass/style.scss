@@ -18,7 +18,39 @@ Version: 1.2
 
 }
 /*  header stuff - here */
+#header {
+	#header-top-bar {
+		#topbar-menu { // ul
+			li:after {
+				content: " ";
+			}
+			li.srt-topmenu-button a {
+				border: 2px solid white;
+				background-color: $sunrise-yellow;
+				padding: 6px 10px;
+				color: black;
+				margin-left: 20px;
+				text-transform: uppercase;
+			}
+		}
 
+	}
+	#header-wrap {
+		.logo a {
+			border: 7px solid $sunrise-ltgreen;
+		}
+		#navigation {
+			#menu>li>a:hover {
+				color: $sunrise-yellow;
+			}
+			#menu {
+				ul.sub-menu {
+					top: 100px;
+				}
+			}
+		}
+	}
+}
 /*** styling of content */
 /*** styling of content */
 #content.right-sidebar-page {
