@@ -17,6 +17,7 @@ Version: 1.2
 .sb-slidebar { // the sidebar sliding bar for mobil menu
 
 }
+ //#navigation .current_page_item a
 /*  header stuff - here */
 #header {
 	#header-top-bar {
@@ -35,17 +36,27 @@ Version: 1.2
 		}
 
 	}
-	#header-wrap {
-		.logo a {
-			border: 7px solid $sunrise-ltgreen;
-		}
-		#navigation {
-			#menu>li>a:hover {
-				color: $sunrise-yellow;
+	#header-inner-wrap {
+		height: 120px;
+		#header-wrap {
+			.logo a {
+				border: 7px solid $sunrise-ltgreen;
 			}
-			#menu {
-				ul.sub-menu {
-					top: 100px;
+			#navigation {
+				#menu>li>a:hover {
+					color: $sunrise-yellow;
+				}
+				#menu {
+					>.current_page_item>a {
+						color: $sunrise-yellow;
+					}
+					.current-menu-ancestor>a {
+						color: white;
+					}
+					ul.sub-menu {
+						top: 100px;
+					}
+
 				}
 			}
 		}
