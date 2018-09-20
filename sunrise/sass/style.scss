@@ -30,9 +30,8 @@ Version: 1.2
 			}
 			li.srt-topmenu-button a {
 				border: 2px solid white;
-				background-color: $sunrise-yellow;
-				padding: 6px 10px;
-				color: black;
+				background-color: $sunrise-ltgreen;
+				padding: 3px 10px;
 				margin-left: 20px;
 				text-transform: uppercase;
 			}
@@ -43,7 +42,8 @@ Version: 1.2
 		height: 120px;
 		#header-wrap {
 			.logo a {
-				border: 7px solid $sunrise-ltgreen;
+				//border: 7px solid $sunrise-ltgreen;
+				box-shadow: 2px 2px 15px #0009;
 			}
 			#navigation {
 				#menu>li>a:hover {
