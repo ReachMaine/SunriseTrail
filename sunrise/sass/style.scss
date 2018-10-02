@@ -78,6 +78,7 @@ Version: 1.2
 .sunrise-alerts-wrap:not(:empty) { //ul
 	.sunrise-alerts-title { // h3
 		// font-weight:bold;
+		text-align: center;
 	}
 	border: 3px solid $sunrise-yellow;
 	padding: 10px;
