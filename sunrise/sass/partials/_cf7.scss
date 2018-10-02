@@ -5,9 +5,11 @@ $cf7-success-background: #598E46;
 $cf7-submit-color: #fff;
 
 .wpcf7-form {
+   padding: 10px;
    textarea {
       height: 200px;
       background-color: white;
+      border: 0px;
     }
     input[type="text"],
     input[type="password"],
@@ -24,6 +26,7 @@ $cf7-submit-color: #fff;
     input[type="tel"],
     input[type="color"] {
        max-width: 100%;
+       border: 0px;
     }
     input[type="tel"]{
        width: 200px;
@@ -54,19 +57,7 @@ $cf7-submit-color: #fff;
       content:"*";
       color: red;
     }
-    .one-half, .one-third, .two-third {
-      position: relative;
-      //margin-right: 4%;
-      padding-right: 2%;
-      padding-bottom: 5px;
-      float: left;
-      // width set in foundation.css
-    }
-    .one-half.last, .one-third.last, .two-third.last {
-      //margin-right: 0px!important;
-      padding-right: 0px;
-      clear: right;
-    }
+
 }
 .wpcf7 .wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
 	color: $cf7-success-color;

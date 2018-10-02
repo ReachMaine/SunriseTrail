@@ -7,6 +7,7 @@ $reach-orange: #ffa73d;
 $sunrise-green: #145E2F;
 $sunrise-ltgreen: #5c896a;
 $sunrise-yellow: #f9c718;
+$sunrise-ltgreygreen:  #d6e1da;
 // Background colors:
 
 // special colors
@@ -15,4 +16,8 @@ $cf7-success-background: #57f14e;
 $top-cta-bkg: #4e72b0;
 $top-cta-font: #faf3e6;
 $bottom-cta-bkg: rgba(78,114,176,0.22);
+
+.stc-greenleftborder {
+  border-left: 2px solid $sunrise-ltgreygreen;
+}
 /* ----------- end Colors ----------- */

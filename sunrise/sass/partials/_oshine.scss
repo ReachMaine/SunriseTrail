@@ -17,7 +17,8 @@
 		}
 }
 
-// hide the 'posted in' category on blog posts
+// hide the 'posted in' category on blog posts & user
+.post-meta.post-author,
 .post-meta.post-category {
 	display: none;
 }

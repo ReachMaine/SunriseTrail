@@ -34,6 +34,7 @@ Version: 1.2
 				padding: 3px 10px;
 				margin-left: 20px;
 				text-transform: uppercase;
+				color: white;
 			}
 		}
 
@@ -66,12 +67,41 @@ Version: 1.2
 	}
 }
 /*** styling of content */
-/*** styling of content */
+
 #content.right-sidebar-page {
 	padding-top: 45px;  // small at mobile in media
 	padding-bottom: 45px;
 }
-/** sidebar
+/* alerts box */
+.sunrise-alerts-wrap:not(:empty) { //ul
+	.sunrise-alerts-title { // h3
+		// font-weight:bold;
+	}
+	border: 3px solid $sunrise-yellow;
+	padding: 10px;
+	list-style: none;
+	/*li:before {
+		content:"Trail Alert: " ;
+		font-weight: bold;
+	} */
+	li {
+		.sunrise-alert-title {
+			font-weight: bold;
+		}
+		.sunrise-alert-date {
+			font-size: small;
+			padding-left: 10px;
+		}
+		.sunrise-alert-more {
+			padding-left: 20px;
+			font-size: .8em;
+		}
+		.sunrise-alert-more:after {
+			content: " >> ";
+		}
+	}
+}
+/** sidebar */
 
 /** footer **/
 
