@@ -1,0 +1,37 @@
+/*** styling of blog  ****/
+// both archive & single
+ .style2-blog {
+		.blog-post { // article
+			margin-bottom: 30px;
+			.post-content-wrap {
+				 margin-bottom: 0px;
+			 }
+			 .more-link{
+				 display: inline; // not sure why it's hidden
+			 }
+
+		}
+ }
+// just archive
+body.archive {
+	.style2-blog {
+		 .blog-post { // article
+			 p {
+				 margin-bottom: 15px;
+			 }
+			 .blog-separator {
+				 hr {
+					 margin-top: 15px;
+				 }
+			 }
+		 }
+	 }
+}
+// just single
+
+
+#content.right-sidebar-page {
+	padding-top: 45px;  // small at mobile in media
+	padding-bottom: 45px;
+}
+/*** end styling of blog  ****/

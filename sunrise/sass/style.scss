@@ -10,6 +10,7 @@ Version: 1.2
 @import "partials/colors";
 @import "partials/typography";
 @import "partials/oshine";
+@import "partials/blog";
 @import "partials/cf7";
 
 
@@ -23,7 +24,7 @@ Version: 1.2
 	#header-top-bar {
 		#topbar-menu { // ul
 			li a {
-				font-size: 0.9em;
+				font-size: 16px;
 			}
 			li:after {
 				content: " ";
@@ -31,10 +32,11 @@ Version: 1.2
 			li.srt-topmenu-button a {
 				border: 2px solid white;
 				background-color: $sunrise-ltgreen;
-				padding: 3px 10px;
+				padding: 3px 14px;
 				margin-left: 20px;
 				text-transform: uppercase;
 				color: white;
+				border-radius: 7px;
 			}
 		}
 
