@@ -78,7 +78,7 @@ Version: 1.2
 .sunrise-alerts-wrap:not(:empty) { //ul
 	.sunrise-alerts-title { // h3
 		// font-weight:bold;
-		text-align: center;
+		//text-align: center;
 	}
 	border: 3px solid $sunrise-yellow;
 	padding: 10px;
@@ -104,7 +104,38 @@ Version: 1.2
 		}
 	}
 }
+// trail conditions box
+ul.sunrise-conditions-wrap {
+	list-style: none;
+}
+
 /** sidebar */
+#right-sidebar {
+	.srt-widget-title-big {
+		>h6 {
+			font-size: 1.5em;
+			font-wieight: bold;
+		}
+	}
+	.srt-sponsors-menu {
+		ul {
+			li {
+				//width: 48%;
+				//float: left;
+				padding-left: 0px;
+				a {
+					img {
+						max-height: 150px;
+						width: auto;
+					}
+				}
+			}
+			li:before {
+				content: none;
+			}
+		}
+	}
+}
 
 /** footer **/
 
@@ -112,9 +143,29 @@ Version: 1.2
 #reach-bottom-cta{
 	//margin-top: 40px;
 	//margin-bottom: 40px;
-	background-color: $bottom-cta-bkg;
-	.widget {
-    margin-bottom: 0px;
+	//background-color: $bottom-cta-bkg;
+	border-top: 1px solid $sunrise-ltgreen;
+	padding-top: 10px;
+	.widget.srt-sponsors-menu  {
+    	margin-bottom: 0px;
+			ul {
+				li {
+					//width: 48%;
+					float: left;
+					height: 160px;
+					padding-left: 0px;
+					a {
+						img {
+							max-width: 200px;
+							max-height: 160px;
+							width: auto;
+						}
+					}
+				}
+				li:before {
+					content: none;
+				}
+			}
 	}
 }
 // footer

@@ -1,13 +1,35 @@
 /*** styling of blog  ****/
 // both archive & single
+
+.more-link,
+.more-link.style2-button,
+.style2-blog .blog-post .more-link.style2-button,
+.sunrise-more { // used in trails conditions block.
+	display: inline-block;
+	background-color: $sunrise-ltgreen;
+	color: white!important;
+	border: 1px solid #fff;
+	padding: 15px;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.more-link:hover,
+.style2-blog .blog-post .more-link:hover,
+.more-link.style2-button:hover,
+.sunrise-more:hover {
+  background-color: $sunrise-grey!important;;
+  color: white!important;
+}
+
  .style2-blog {
 		.blog-post { // article
 			margin-bottom: 30px;
 			.post-content-wrap {
 				 margin-bottom: 0px;
 			 }
-			 .more-link{
-				 display: inline; // not sure why it's hidden
+			.more-link {
          float: right;
 			 }
 
