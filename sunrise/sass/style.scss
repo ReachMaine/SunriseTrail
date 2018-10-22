@@ -75,11 +75,21 @@ Version: 1.2
 	padding-bottom: 45px;
 }
 /* alerts box */
+.sunrise-alerts-title:before { // not in the ul/wrap
+	font-family: FontAwesome;
+	content: "\f071";
+	color: $sunrise-yellow;
+	font-size: 1.4em;
+	padding-right: 10px;
+}
+.sunrise-alerts-title { // h3
+	// font-weight:bold;
+	//text-align: center;
+}
+
 .sunrise-alerts-wrap:not(:empty) { //ul
-	.sunrise-alerts-title { // h3
-		// font-weight:bold;
-		//text-align: center;
-	}
+
+
 	border: 3px solid $sunrise-yellow;
 	padding: 10px;
 	list-style: none;
@@ -90,6 +100,9 @@ Version: 1.2
 	li {
 		.sunrise-alert-title {
 			font-weight: bold;
+		}
+		.sunrise-alert-title.sunrise-alert-break {
+			display: block;
 		}
 		.sunrise-alert-date {
 			font-size: small;

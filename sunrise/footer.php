@@ -76,14 +76,13 @@
 					</div>
 					<?php endif; ?>
 				</div>
-
-				<div class="footer-center-area">
-					<?php if ($be_themes_data['footer-content-pos-center'] != 'none' ) : ?>
-					<div class="footer-content-inner-center">
-						<?php be_themes_get_footer_widget($be_themes_data['footer-content-pos-center']); ?>
+				<?php if ($be_themes_data['footer-content-pos-center'] != 'none' ) : ?>
+					<div class="footer-center-area">
+						<div class="footer-content-inner-center">
+							<?php be_themes_get_footer_widget($be_themes_data['footer-content-pos-center']); ?>
+						</div>
 					</div>
-					<?php endif; ?>
-				</div>
+			  <?php endif; ?>
 
 				<div class="footer-right-area">
 					<?php if($be_themes_data['footer-content-pos-right'] != 'none' ) : ?>
