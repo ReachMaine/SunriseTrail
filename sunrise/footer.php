@@ -9,13 +9,7 @@
 			echo '</div><!-- under content wrap -->';
 		echo '</div><!-- under content -->';
 	}
-	if (is_active_sidebar('reach-bottom-cta')) {
-		echo '<footer id="reach-bottom-cta">';
-			echo '<div id="reach-bottom-cta-wrap" class="be-wrap be-row clearfix">';
-			dynamic_sidebar( 'reach-bottom-cta');
-			echo '</div>';
-		echo '</footer>';
-	}
+
 	global $be_themes_data;
 	$post_id = be_get_page_id();
 	$fixed_footer = ( isset( $be_themes_data['fixed-footer'] ) && !empty( $be_themes_data['fixed-footer'] ) && be_is_fixed_footer_possible() ) ? true : false;
@@ -64,6 +58,15 @@
 			</div>
 		</footer>
 	<?php } ?>
+	<?php
+		if (is_active_sidebar('reach-bottom-cta')) {
+			echo '<footer id="reach-bottom-cta">';
+				echo '<div id="reach-bottom-cta-wrap" class="be-wrap be-row clearfix">';
+				dynamic_sidebar( 'reach-bottom-cta');
+				echo '</div>';
+			echo '</footer>';
+	}
+	?>
 	<?php if(('no' != $show_footer_area) && !(($be_themes_data['footer-content-pos-center'] == 'none' ) && ($be_themes_data['footer-content-pos-left'] == 'none' ) && ($be_themes_data['footer-content-pos-right'] == 'none' ))) { ?>
 		<footer id="footer" class="<?php echo esc_attr( $be_themes_data['layout'] );?>">
 			<span class="footer-border <?php echo (($be_themes_data['footer-border-wrap']) ? 'be-wrap ' : '' );?>"></span>
