@@ -34,6 +34,8 @@
 		$col_class = "one-fourth";
 		$i = 4;
 	}
+	$i = 2; // zig, only two widget areads in footer
+	$col_class = "one-half";
 	for($j = 1; $j <= $i; $j++) {
 		if ( is_active_sidebar( 'footer-widget-'.$j ) ) {
 			$active_sidebar = true;

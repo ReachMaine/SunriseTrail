@@ -166,34 +166,43 @@ ul.sunrise-conditions-wrap {
 }
 
 /** footer **/
-
+#bottom-widgets {
+	border-top: 1px solid #e2e2e2; // erin probably wont like this... :)
+	padding-top: 30px;
+	padding-bottom: 0px;;
+	.widget.srt-social-icons {
+		i {
+			background-color: $sunrise-ltgreen;
+			color: white;
+			font-size: 20px;
+			padding: 8px;
+			border-radius: 50%;
+			margin-left: 10px;
+		}
+		i.fa-facebook-f {
+			padding: 10px 13px;
+		}
+		i:hover {
+			background-color: $sunrise-yellow;
+			//color: #777777;
+		}
+	}
+}
 // reach-bottom-cta
 #reach-bottom-cta{
 	//margin-top: 40px;
 	//margin-bottom: 40px;
-	//background-color: $bottom-cta-bkg;
-	border-top: 1px solid $sunrise-ltgreen;
-	padding-top: 10px;
-	.widget.srt-sponsors-menu  {
-    	margin-bottom: 0px;
-			ul {
-				li {
-					//width: 48%;
-					float: left;
-					height: 160px;
-					padding-left: 0px;
-					a {
-						img {
-							max-width: 200px;
-							max-height: 160px;
-							width: auto;
-						}
-					}
-				}
-				li:before {
-					content: none;
-				}
-			}
+	background-color: $bottom-cta-bkg;
+	//border-top: 1px solid $sunrise-ltgreen;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.widget {
+		margin-bottom :0px;
+	}
+	.widget.widget_text {
+		p {
+			margin-bottom: 0px;
+		}
 	}
 }
 // footer

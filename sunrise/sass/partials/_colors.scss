@@ -16,9 +16,13 @@ $cf7-success-color: #000;
 $cf7-success-background: #57f14e;
 $top-cta-bkg: #4e72b0;
 $top-cta-font: #faf3e6;
-$bottom-cta-bkg: rgba(78,114,176,0.22);
+$bottom-cta-bkg: #d6e1da; //#e7ede9;
 
 .stc-greenleftborder {
   border-left: 2px solid $sunrise-ltgreygreen;
+}
+
+#bottom-widgets .widget.srt-widget-tight-bottom {
+  margin-bottom: 0px;
 }
 /* ----------- end Colors ----------- */
