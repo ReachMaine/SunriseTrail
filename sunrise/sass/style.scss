@@ -169,7 +169,8 @@ ul.sunrise-conditions-wrap {
 #bottom-widgets {
 	border-top: 1px solid #e2e2e2; // erin probably wont like this... :)
 	padding-top: 30px;
-	padding-bottom: 0px;;
+	padding-bottom: 0px;
+	/// theme options background-color: $sunrise-ltgreen;
 	.widget.srt-social-icons {
 		i {
 			background-color: $sunrise-ltgreen;
@@ -193,6 +194,7 @@ ul.sunrise-conditions-wrap {
 	//margin-top: 40px;
 	//margin-bottom: 40px;
 	background-color: $bottom-cta-bkg;
+	color: $sunrise-green;
 	//border-top: 1px solid $sunrise-ltgreen;
 	padding-top: 20px;
 	padding-bottom: 20px;
