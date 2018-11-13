@@ -1,0 +1,21 @@
+/* styling for table press */
+// all tables
+table.tablepress {
+  thead {
+    th {
+      background-color: $sunrise-ltgreygreen;
+    }
+  }
+}
+// table 1 only
+#tablepress-1 {
+  tbody {
+    .column-4 {
+      font-style: italic;
+      font-size: smaller;
+    }
+    tr:last-child {
+      background-color: $sunrise-ltgreygreen;
+    }
+  }
+}
