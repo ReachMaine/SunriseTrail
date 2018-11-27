@@ -43,7 +43,7 @@ Version: 1.2
 
 	}
 	#header-inner-wrap {
-		height: 120px;
+		height: 120px; // 170px;
 		#header-wrap {
 			.logo a {
 				//border: 7px solid $sunrise-ltgreen;
@@ -125,7 +125,18 @@ Version: 1.2
 ul.sunrise-conditions-wrap {
 	list-style: none;
 }
-
+.srt-memorial { //box for Sally Martin Jacobs Memorial
+	h3 {
+		line-height: 26px;
+	}
+	p {
+		font-style: italic;
+		color: black;
+		font-size: 17px;
+		line-height: 26px;
+		margin-bottom: 10px;
+	}
+}
 /** sidebar */
 #right-sidebar {
 	.srt-widget-title-big {
