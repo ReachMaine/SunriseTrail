@@ -20,7 +20,7 @@ $post_format = get_post_format();
 					get_template_part( 'content', $post_format );
 				}
 			?>
-			<div class="article-details clearfix">
+			<div class="article-details clearfix <?php if (!has_post_thumbnail()) { echo 'no-thumb ';}?>">
 				<?php if( !is_single() || !$is_wide_single ) : ?>
 					<header class="post-header clearfix">
 						<?php

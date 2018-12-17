@@ -52,6 +52,11 @@ body.archive {
     }
 	.style2-blog {
 		 .blog-post { // article
+			 .post-content-wrap {
+				 	.article-details.no-thumb {
+						width: 100%;
+					}
+				}
 			 p {
 				 margin-bottom: 15px;
 			 }
@@ -61,6 +66,7 @@ body.archive {
 				 }
 			 }
 		 }
+
 	 }
 }
 // just single
