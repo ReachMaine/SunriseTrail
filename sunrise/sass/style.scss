@@ -40,6 +40,15 @@ Version: 1.2
 				//border-radius: 7px;
 			}
 		}
+		#header-top-bar-right {
+			padding: 0px;
+			.top-bar-widgets {
+				background-color: white;
+				padding: 5px 10px;
+				margin-top: 5px;
+				margin-right: 24px;
+			}
+		}
 
 	}
 	#header-inner-wrap {
@@ -79,6 +88,7 @@ Version: 1.2
 	padding-bottom: 45px;
 }
 /* alerts box */
+.sunrise-alertstop-wrap:before,
 .sunrise-alerts-title:before { // not in the ul/wrap
 	font-family: FontAwesome;
 	content: "\f071";
