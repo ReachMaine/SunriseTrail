@@ -15,12 +15,25 @@
 				            	break;
 				        }
 						break; */
+
+						case 'give': {
+							switch ( $translated_text ) {
+									 case 'Company Name' :
+											 $translated_text =  'Organization Affiliation';
+											 break;
+							 		 case 'Donate on behalf of Company' : // remove Category: from front of blog archives.
+												 $translated_text =  'Donate on behalf of an organziation or club';
+												break;
+							 }
+							 break;
+						} // end give
 						case 'oshin': {
 							switch ( $translated_text ) {
 									 case 'Category: ' : // remove Category: from front of blog archives.
 											 $translated_text =  '';
 											 break;
 							 }
+							 break;
 						} // end ohin
 					default:
 						/* switch ( $translated_text ) {
